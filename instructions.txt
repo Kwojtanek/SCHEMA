@@ -9,10 +9,17 @@ tasks manager: Grunt
 Warning! Use it only as develepment enviroment.
 	
 Installation instructions:
-	
-	chmod -x build	
-	/.build
-
+	LINUX:
+		chmod -x build	
+		/.build
+	WINDOWS:
+		virtualenv venv/	- Initializes virtual enviroment
+		source bin/activate	- Activates virtual env.
+		pip install -r requirements.txt		- Installs django & drf
+		cd static
+		npm install	- Installs Angular2, TypeScript & and other js files
+		
+		
 Installation may take a while depending on your connection speed
 Server and TypeScript Compiler will start automaticly and
 if everything goes correct you will see on addres: localhost:8000
