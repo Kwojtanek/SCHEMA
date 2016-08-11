@@ -1,0 +1,22 @@
+Schema aplication for Single Page Aplication.
+The stack:
+    Backend: Django & django-rest-framework
+    FrontEnd: Angular2
+    DB: Not implemented, default SQLite3
+
+Requires VirtualEnv, Pip and NodeJs
+tasks manager: Grunt
+Warning! Use it only as develepment enviroment.
+	
+Installation instructions:
+	
+	chmod -x build	
+	/.build
+
+Installation may take a while depending on your connection speed
+Server and TypeScript Compiler will start automaticly and
+if everything goes correct you will see on addres: localhost:8000
+"Hello World" angular2 application
+
+To start TypeScript Compiler go to static and type: 'npm tsc:w'
+To start css minifier type: 'grunt'

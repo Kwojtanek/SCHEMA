@@ -1,0 +1,12 @@
+#! /bin/bash
+virtualenv venv/ \
+&& source venv/bin/activate \
+&& pip install -r requirements.txt \
+&& cd static \
+&& npm install \
+&& npm run typings install \
+&& echo "Starting TypeScript Compiler" \
+&& gnome-terminal -x sh -c "npm run tsc:w" \
+&& cd .. \
+&& echo "Starting python server" \
+&& gnome-terminal -x sh -c  "python manage.py runserver"
