@@ -11,7 +11,7 @@ Warning! Use it only as develepment enviroment.
 Installation instructions:
 	LINUX:
 		chmod -x build	
-		/.build
+		source build
 	WINDOWS:
 		virtualenv venv/	- Initializes virtual enviroment
 		source bin/activate	- Activates virtual env.
